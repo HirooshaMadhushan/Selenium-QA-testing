@@ -19,37 +19,37 @@ public class LinkExample {
 
     @Test
     public void LinkTest(){
-//        //take me into dashboard
-//        WebElement homeLink=driver.findElement(By.linkText("Go to Dashboard"));
-//        homeLink.click();
-//        driver.navigate().back();
-//
-//        //find my destination
-//        WebElement wheretoGo=driver.findElement(By .partialLinkText("Find the URL"));
-//        String path=wheretoGo.getAttribute("href");
-//        System.out.println("This is the path:"+path);
-//
-//        //Am i broken link
-//        WebElement brokenLink=driver.findElement(By .linkText("Broken?"));
-//        brokenLink.click();
-//
-//        String title=driver.getTitle();
-//        if(title.contains("404")){
-//            System.out.println("This is brken Link");
-//        }else {
-//            System.out.println("Not Broken");
-//        }
-//        driver.navigate().back();
-//
-//        //Duplicate link
-//        WebElement homeLink1=driver.findElement(By.linkText("Go to Dashboard"));
-//        homeLink1.click();
-//        driver.navigate().back();
-//
-//        //Count Page Links
-//        List<WebElement> CountFullPageLinks=driver.findElements(By .tagName("a"));
-//        int PageLinkCout=CountFullPageLinks.size();
-//        System.out.println("Page Number Of Links:"+PageLinkCout);
+        //take me into dashboard
+        WebElement homeLink=driver.findElement(By.linkText("Go to Dashboard"));
+        homeLink.click();
+        driver.navigate().back();
+
+        //find my destination
+        WebElement wheretoGo=driver.findElement(By .partialLinkText("Find the URL"));
+        String path=wheretoGo.getAttribute("href");
+        System.out.println("This is the path:"+path);
+
+        //Am i broken link
+        WebElement brokenLink=driver.findElement(By .linkText("Broken?"));
+        brokenLink.click();
+
+        String title=driver.getTitle();
+        if(title.contains("404")){
+            System.out.println("This is brken Link");
+        }else {
+            System.out.println("Not Broken");
+        }
+        driver.navigate().back();
+
+        //Duplicate link
+        WebElement homeLink1=driver.findElement(By.linkText("Go to Dashboard"));
+        homeLink1.click();
+        driver.navigate().back();
+
+        //Count Page Links
+        List<WebElement> CountFullPageLinks=driver.findElements(By .tagName("a"));
+        int PageLinkCout=CountFullPageLinks.size();
+        System.out.println("Page Number Of Links:"+PageLinkCout);
 
         //Count Layout Links
         WebElement LayoutElement=driver.findElement(By .className("layout-main-content"));
